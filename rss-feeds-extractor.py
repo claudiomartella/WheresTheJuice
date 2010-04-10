@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 '''
 Created on Apr 6, 2010
 
 @author: hammer
 '''
 
-from BeautifulSoup import BeautifulSoup
+from libs.BeautifulSoup import BeautifulSoup
 from urlparse import urljoin
 import urllib2, sys, re
 
@@ -18,7 +19,7 @@ if __name__ == '__main__':
         url = url.strip()
         if url[0] == '#':
             continue
-        
+
         #print "Processing: " + url
         
         html = urllib2.urlopen(url.strip())
